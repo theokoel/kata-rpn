@@ -2,7 +2,7 @@ package fr.efrei;
 
 public class Calculator {
 
-    public static String calculate(String input) {
+    public static Integer calculate(Integer input) {
 
         return input;
 
