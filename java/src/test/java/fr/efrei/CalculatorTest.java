@@ -43,6 +43,11 @@ public class CalculatorTest {
     assertEquals(0, Calculator.calculate("1 1 -"));
   }
 
+  @Test
+  void check_two_minor_two() {
+    assertEquals(0, Calculator.calculate("2 2 -"));
+  }
+
 
 
 }
