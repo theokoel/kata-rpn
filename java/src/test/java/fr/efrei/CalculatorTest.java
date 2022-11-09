@@ -10,17 +10,24 @@ public class CalculatorTest {
 
   @Test
   void check_one() {
-    assertEquals(1, Calculator.calculate(1));
+    assertEquals(1, Calculator.calculate("1"));
   }
 
   @Test
   void check_two() {
-    assertEquals(2, Calculator.calculate(2));
+    assertEquals(2, Calculator.calculate("2"));
   }
 
   @Test
   void check_int() {
-    assertEquals(42, Calculator.calculate(42));
+    assertEquals(42, Calculator.calculate("42"));
   }
+
+  @Test
+  void check_one_add_one() {
+    assertEquals(2, Calculator.calculate("1 1 +"));
+  }
+
+
 
 }
