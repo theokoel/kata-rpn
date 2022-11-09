@@ -15,6 +15,8 @@ public class Calculator {
         switch(operand) {
             case "+":
                 return n1 + n2;
+            case "-":
+                return n1 - n2;
             default:
                 throw new NullPointerException();
         }

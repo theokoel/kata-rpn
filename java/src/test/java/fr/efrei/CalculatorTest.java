@@ -33,6 +33,11 @@ public class CalculatorTest {
     assertEquals(4, Calculator.calculate("2 2 +"));
   }
 
+  @Test
+  void check_int_add_int() {
+    assertEquals(73, Calculator.calculate("45 28 +"));
+  }
+
 
 
 }
