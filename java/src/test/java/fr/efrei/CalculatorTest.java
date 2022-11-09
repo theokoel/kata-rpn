@@ -58,6 +58,16 @@ public class CalculatorTest {
     assertEquals(4, Calculator.calculate("2 2 *"));
   }
 
+  @Test
+  void check_one_divide_one() {
+    assertEquals(1, Calculator.calculate("1 1 /"));
+  }
+
+  @Test
+  void check_two_divide_two() {
+    assertEquals(1, Calculator.calculate("2 2 /"));
+  }
+
 
 
 }

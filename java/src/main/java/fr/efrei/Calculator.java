@@ -19,6 +19,8 @@ public class Calculator {
                 return n1 - n2;
             case "*":
                 return n1 * n2;
+            case "/":
+                return n1 / n2;
             default:
                 return 0;
         }
