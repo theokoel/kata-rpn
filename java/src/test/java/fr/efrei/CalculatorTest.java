@@ -38,6 +38,11 @@ public class CalculatorTest {
     assertEquals(73, Calculator.calculate("45 28 +"));
   }
 
+  @Test
+  void check_one_minor_one() {
+    assertEquals(0, Calculator.calculate("1 1 -"));
+  }
+
 
 
 }
