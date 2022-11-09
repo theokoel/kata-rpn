@@ -68,6 +68,11 @@ public class CalculatorTest {
     assertEquals(1, Calculator.calculate("2 2 /"));
   }
 
+  @Test
+  void check_1_1_add_1_minor() {
+    assertEquals(1, Calculator.calculate("1 1 + 1 -"));
+  }
+
 
 
 }

@@ -1,14 +1,23 @@
 package fr.efrei;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class Calculator {
 
     public static Integer calculate(String input) {
 
-        String[] res = input.split(" ");
+        ArrayList<String> res = new ArrayList<>(Arrays.asList(input.split(" ")));
 
-        if(res.length == 1) return Integer.parseInt(res[0]);
-        return applyOperand(Integer.parseInt(res[0]), Integer.parseInt(res[1]), res[2]) ;
-
+        if(res.size() == 1) return Integer.parseInt(res.get(0));
+        if(res.size() == 3) return applyOperand(Integer.parseInt(res.get(0)), Integer.parseInt(res.get(1)), res.get(2));
+        while(res.size() > 1) {
+            Integer memory = applyOperand(Integer.parseInt(res.get(0)), Integer.parseInt(res.get(1)), res.get(2));
+            res.remove(0);
+            res.remove(0);
+            res.set(0, memory.toString());
+        }
+        return Integer.parseInt(res.get(0));
     }
 
     private static Integer applyOperand(Integer n1, Integer n2, String operand) {
