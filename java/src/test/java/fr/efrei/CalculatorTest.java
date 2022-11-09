@@ -28,6 +28,11 @@ public class CalculatorTest {
     assertEquals(2, Calculator.calculate("1 1 +"));
   }
 
+  @Test
+  void check_two_add_two() {
+    assertEquals(4, Calculator.calculate("2 2 +"));
+  }
+
 
 
 }
